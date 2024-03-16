@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
+
+/* Body */
+body {
+  font-family: "Sniglet", cursive;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  background-image: linear-gradient(to right, #ffcccc, #ffccff);
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Başlık */
+h1 {
+  color: #333;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Arama Alanı */
+.searchContainer {
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  font-family: inherit;
+  background-color: #f5f5f5;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  width: 150px;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+.searchInput:focus {
+  width: 200px;
+}
+
+.searchBtn {
+  background-color: #cc99ff;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px; /* Buton ile input arasındaki boşluğu ayarlar */
+}
+
+.searchBtn:hover {
+  background-color: #9966ff;
+}
+
+/* Pokemon Kartları */
+.poke-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Kartlar arasındaki boşluk */
+}
+.pokemon {
+  width: calc(25% - 20px); /* 4 sütunlu düzen */
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+.pokemon:hover {
+  transform: translateY(-5px);
+}
+
+.image-container {
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.pokemon:hover .image-container img {
+  transform: scale(1.1);
+}
+
+.poke-info {
+  margin-top: 10px;
+}
+
+.poke-id {
+  background-color: #cc99ff;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.poke-name {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.poke-type {
+  margin-top: 5px;
+}
+
+.small {
+  font-size: 12px;
+  color: #777;
+}
